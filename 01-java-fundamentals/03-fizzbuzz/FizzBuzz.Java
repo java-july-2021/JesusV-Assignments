@@ -1,22 +1,25 @@
-public class FizzBuzz.Java{
-    public void FizzBuzzTest(){
-        for(int i = 1, i <= 100; i++){
-            String result = FizzBuzz(i);
-            System.Out.println("Number" + i + " - " + "Result" + result);
-
+public class FizzBuzz {
+    public static String fizzBuzz(int number){
+        if(number % 5 == 0 && number % 3 == 0){
+            return "FIZZ BUZZ";
         }
+        else if(number % 3 == 0){
+            return "FIZZ";
+        }
+        else if(number % 5 == 0){
+            return "BUZZ";
+        }
+        else if(number == 2){
+            return "2";
+        }
+        return Integer.toString(number);
     }
 
-   public String FizzBuzz(int value){
-       if(value % 3 == 0 && val % == 0){
-           return "FizzBuzz"
-           else if(val % 3 == 0){
-               return "Fizz";
-           } else if (val % 5 == 0){
-               return "Buzz";
-           } else {
-               return Integer.toString(value);
-           }
-       }
-   } 
+    public void tester(){
+        for(int i = 0; i < 100; i++) {
+            String result = fizzBuzz(i);
+            String output = String.format("Number: %d :: Result: %s", i, result);
+            System.out.println(output);
+        }
+    }
 }

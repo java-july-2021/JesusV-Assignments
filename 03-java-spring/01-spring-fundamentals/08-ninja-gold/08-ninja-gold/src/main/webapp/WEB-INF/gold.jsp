@@ -7,13 +7,14 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Insert title here</title>
+<title>Ninja Gold!</title>
+<link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
 
-<p>Your Gold </p>
+<p>Your Gold: <c:out value="${totalGold}"/></p>
 <div class="building">
-<form action="POST" action="/getgold">
+<form action="/getGold" method="POST">
 <input type="hidden" value="farm" name="building">
 <h2>Farm</h2>
 <p>Earns 10-20 Gold</p>
@@ -21,7 +22,7 @@
 </form>
 </div>
 <div class="building">
-<form action="POST" action="/getgold">
+<form action="/getGold" method="POST">
 <input type="hidden" value="cave" name="building">
 <h2>Cave</h2>
 <p>Earns 5-10 Gold</p>
@@ -29,7 +30,7 @@
 </form>
 </div>
 <div class="building">
-<form action="POST" action="/getgold">
+<form action="/getGold" method="POST">
 <input type="hidden" value="house" name="building">
 <h2>House</h2>
 <p>Earns 2-5 Gold</p>
@@ -37,7 +38,7 @@
 </form>
 </div>
 <div class="building">
-<form action="POST" action="/getgold">
+<form action="/getGold" method="POST">
 <input type="hidden" value="casino" name="building">
 <h2>Casino</h2>
 <p>Earns 0-50 Gold</p>
@@ -47,7 +48,16 @@
 
 <h2>Activities</h2>
 <div class="activities">
-<p>activities will go here</p>
+<c:forEach items = "${activity}" var="act">
+<c:choose>
+<c:when test = "${act.contains('ouch')}" >
+<p class = 'red'> ${act}</p>
+</c:when>
+<c:otherwise>
+<p class = 'green'> ${act}</p>
+</c:otherwise>
+</c:choose>
+</c:forEach>
 </div>
 
 </body>

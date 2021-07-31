@@ -8,11 +8,11 @@
 		<version>2.5.3</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.Jesus.show</groupId>
-	<artifactId>02-show</artifactId>
+	<groupId>com.Jesus.languages</groupId>
+	<artifactId>03-languages</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>02-show</name>
-	<description>the show assignment</description>
+	<name>03-languages</name>
+	<description>languages assignment</description>
 	<properties>
 		<java.version>1.8</java.version>
 	</properties>
@@ -46,7 +46,7 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
-		<dependency>
+			<dependency>
     		<groupId>mysql</groupId>
     		<artifactId>mysql-connector-java</artifactId>
     		<scope>runtime</scope>

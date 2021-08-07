@@ -18,3 +18,11 @@ body{
 	max-height: 100px;
 	min-height: 100px;
 }
+
+.red{
+	color:red;
+}
+
+.green{
+	color:green;
+}

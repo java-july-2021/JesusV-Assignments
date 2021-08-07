@@ -38,15 +38,15 @@ public class GoldController {
 		int gold = (int)session.getAttribute("gold");
 		int goldThisTurn;
 		if(building.equals("farm")) {
-			goldThisTurn = r.nextInt((20 -10) + 1) - 10;
+			goldThisTurn = r.nextInt((20 -10) + 1) + 10;
 			activity.add(String.format("You entered a %s and earned %d gold \n", building, goldThisTurn));
 		}
 		else if(building.equals("cave")) {
-			goldThisTurn = r.nextInt((10 -5) + 1) - 5;
+			goldThisTurn = r.nextInt((10 -5) + 1) + 5;
 			activity.add(String.format("You entered a %s and earned %d gold \n", building, goldThisTurn));
 		}
 		else if(building.equals("house")) {
-			goldThisTurn = r.nextInt((5 -2) + 1) - 2;
+			goldThisTurn = r.nextInt((5 -2) + 1) + 2;
 			activity.add(String.format("You entered a %s and earned %d gold \n", building, goldThisTurn));
 		}
 		else {

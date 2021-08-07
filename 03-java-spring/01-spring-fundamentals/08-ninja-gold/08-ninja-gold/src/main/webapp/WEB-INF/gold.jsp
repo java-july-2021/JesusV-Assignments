@@ -48,9 +48,9 @@
 
 <h2>Activities</h2>
 <div class="activities">
-<c:forEach items = "${activity}" var="act">
+<c:forEach items = "${activities}" var="act">
 <c:choose>
-<c:when test = "${act.contains('ouch')}" >
+<c:when test = "${act.contains('OUCH')}" >
 <p class = 'red'> ${act}</p>
 </c:when>
 <c:otherwise>

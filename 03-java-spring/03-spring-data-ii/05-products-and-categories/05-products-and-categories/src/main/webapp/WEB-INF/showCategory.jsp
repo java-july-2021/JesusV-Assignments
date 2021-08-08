@@ -17,7 +17,6 @@
 <ul>
 <c:forEach items="${category.products}" var="prod"/>
 <li>${prod.name} | ${prod.description} | ${prod.price}</li>
-</c:forEach>
 </ul>
 
 <form method="POST" action="/addProdToCat/${category.id}">

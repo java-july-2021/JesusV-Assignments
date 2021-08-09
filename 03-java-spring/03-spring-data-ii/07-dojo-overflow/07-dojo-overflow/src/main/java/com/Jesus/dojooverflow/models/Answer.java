@@ -14,7 +14,6 @@ import javax.persistence.PostPersist;
 import javax.persistence.PrePersist;
 import javax.persistence.Table;
 
-import org.aspectj.weaver.patterns.TypePatternQuestions.Question;
 
 @Entity
 @Table(name="answers")

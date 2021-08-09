@@ -16,7 +16,6 @@ import javax.persistence.OneToMany;
 import javax.persistence.PostPersist;
 import javax.persistence.PrePersist;
 import javax.persistence.Table;
-import javax.servlet.jsp.tagext.Tag;
 
 @Entity
 @Table(name="questions")

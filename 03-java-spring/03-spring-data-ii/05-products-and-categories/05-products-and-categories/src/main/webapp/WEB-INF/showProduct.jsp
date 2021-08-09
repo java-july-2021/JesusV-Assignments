@@ -11,7 +11,9 @@
 </head>
 <body>
 <h1><c:out value="${product.name}"/></h1>
+<hr>
 <c:out value="${product.description}"/>
+<hr>
 <c:out value="${product.price}"/>
 
 <hr>

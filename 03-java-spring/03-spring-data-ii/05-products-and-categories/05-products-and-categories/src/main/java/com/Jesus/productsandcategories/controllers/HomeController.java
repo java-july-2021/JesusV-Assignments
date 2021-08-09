@@ -67,7 +67,7 @@ public class HomeController {
 		return "redirect:/{id}";
 	}
 	
-	@PostMapping("/addCatToProd/{id}")
+	@PostMapping("/addProdToCat/{id}")
 	public String addProdToCat(@RequestParam("prod") Long id, @PathVariable("id") Long categoryId) {
 		Product productToAddCatTo = this.tService.getSingleProd(id);
 		Category categoryToAddProdTo = this.tService.getSingleCat(categoryId);
